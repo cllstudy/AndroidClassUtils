@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cllstudy.androidclassutils.MainActivity">
+
+  <com.cllstudy.androidclassutils.view.VerificationCodeView
+      android:id="@+id/code_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="22dp"
+      android:layout_marginRight="26dp"
+      android:layout_marginTop="6dp"
+      app:codeMode="2"
+      app:codeQuantity="4"/>
+
+  <com.cllstudy.androidclassutils.view.CharAvatarView
+      android:id="@+id/cav"
+      android:layout_width="50dp"
+      android:layout_height="50dp" />
+</LinearLayout>
