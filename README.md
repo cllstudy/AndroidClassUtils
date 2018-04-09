@@ -16,7 +16,7 @@
 ### [ToastUtil](http://t.cn/RmfjsXm)
 Toast工具类
 ### [CharAvatarView](https://urlc.cn/RmfY9fY)
-![联系人头像](https://urlc.cn/RmfYuNB)
+[联系人头像效果](https://urlc.cn/RmfYuNB)
 
 ### [CustomViewPager](https://urlc.cn/RmfT7j4)
 设置viewpager是否可以滑动
