@@ -72,6 +72,9 @@ private void  querySuccess(){
 1. 在子线程中执行
 2. 在主线程执行
 
+### SPUtils
+SharedPreferences 主要功能：用于存储缓存数据
+
 ## How to use
 
 Step 1. Add it in your root build.gradle at the end of repositories:
