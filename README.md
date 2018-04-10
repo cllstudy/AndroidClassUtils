@@ -23,8 +23,54 @@ Toast工具类
 ### [VerificationCodeView](https://urlc.cn/RmfTyBB)
 生成随机验证码
 
+### NetWorkUtil
+判断是否有网络连接
 
+### ThreadManager
+线程池管理的工具类，封装类  
+使用:  
+```
+ ThreadManager.getThreadPollProxy().execute(new Runnable() {
+            @Override
+            public void run() {
+            //第一种方法
+              sampleHandle.sendMessage(sampleHandle.obtainMessage(0));//成功失败通过if else判断
+            }
+            querySuccess();  //选择第二种方法请不要使用第一种
+        });
+```
+可通过此方法发送消息:
+```
+ private Handler sampleHandle=new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message msg) {
+            int what = msg.what;
+            switch (what) {
+                case 1:
+                break;
+                case 0:
+                   break;
+                default:
+                    break;
+            }
+            return false;
+        }
+    });
+```
 
+第二种方法:
+```
+//主线程更新UI
+private void  querySuccess(){
+     ThreadUtil.runOnUiThread(Runnable runnable(){
+      public void run() {};
+     });
+}
+```
+
+### ThreadUtil
+1. 在子线程中执行
+2. 在主线程执行
 
 ## How to use
 
