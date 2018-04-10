@@ -1,5 +1,7 @@
 # AndroidClassUtils
 
+[![](https://jitpack.io/v/cllstudy/AndroidClassUtils.svg)](https://jitpack.io/#cllstudy/AndroidClassUtils)
+
 ## 介绍
 ### [BaseActivity](http://t.cn/RmfloMs)
 1. 沉浸式
