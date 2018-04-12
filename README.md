@@ -94,6 +94,6 @@ Step 2. Add the dependency
 
 ```
 	dependencies {
-		 compile 'com.github.cllstudy:AndroidClassUtils:1.0'
+		 compile 'com.github.cllstudy:AndroidClassUtils:1.1'
 	}
   ```
