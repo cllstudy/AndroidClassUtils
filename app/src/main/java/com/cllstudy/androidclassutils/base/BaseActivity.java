@@ -13,6 +13,7 @@ import android.view.inputmethod.InputMethodManager;
 import com.cllstudy.androidclassutils.utils.ToastUtil;
 import com.cllstudy.androidclassutils.view.IBaseView;
 import com.gyf.barlibrary.ImmersionBar;
+import com.mingle.widget.ShapeLoadingDialog;
 
 
 /**
@@ -111,6 +112,26 @@ public abstract class BaseActivity extends SlidingActivity implements IBaseView 
         this.imm = null;
         if (mImmersionBar != null)
             mImmersionBar.destroy();  //在BaseActivity里销毁
+    }
+    @Override
+    public void showWaitDialog(String msg) {
+        freshDialog(this, msg);
+    }
+    @Override
+    public void dismissWaitDialog() {
+        if (dialog != null && dialog.isShowing()) {
+            dialog.dismiss();
+            dialog = null;
+        }
+    }
+
+    ShapeLoadingDialog dialog;
+    private void freshDialog(Context context, String msg) {
+        if (dialog != null) {
+            dialog = null;
+        }
+        dialog = new ShapeLoadingDialog.Builder(context).loadText(msg).build();
+        dialog.show();
     }
 
 }
